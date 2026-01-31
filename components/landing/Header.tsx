@@ -40,7 +40,7 @@ export default function Header() {
 
                 {/* CTA Button */}
                 <div className="hidden md:block">
-                    <a href="#contact" className="px-6 py-2.5 rounded-full border-2 border-[#1d1d1d] text-[#1d1d1d] font-bold hover:bg-[#FF014F] hover:border-[#FF014F] hover:text-white transition-all duration-300">
+                    <a href="https://calendly.com/kapilchandak-digioutreach/digital-marketing-strategy-advisor" className="px-6 py-2.5 rounded-full border-2 border-[#1d1d1d] text-[#1d1d1d] font-bold hover:bg-[#FF014F] hover:border-[#FF014F] hover:text-white transition-all duration-300">
                         Book Clarity Call
                     </a>
                 </div>
@@ -67,7 +67,7 @@ export default function Header() {
                             {item}
                         </a>
                     ))}
-                    <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="mt-2 text-center px-6 py-3 rounded-full bg-[#FF014F] text-white font-bold">
+                    <a href="https://calendly.com/kapilchandak-digioutreach/digital-marketing-strategy-advisor" onClick={() => setMobileMenuOpen(false)} className="mt-2 text-center px-6 py-3 rounded-full bg-[#FF014F] text-white font-bold">
                         Book Clarity Call
                     </a>
                 </div>

@@ -26,7 +26,7 @@ export default function Pricing() {
                     whileInView="visible"
                     viewport={{ once: true }}
                     variants={fadeUp}
-                    className="max-w-5xl mx-auto bg-[#F9FAFB] rounded-3xl p-8 lg:p-14 border border-gray-100 shadow-sm relative overflow-hidden"
+                    className="max-w-5xl mx-auto bg-[#F9FAFB] rounded-3xl p-6 md:p-8 lg:p-14 border border-gray-100 shadow-sm relative overflow-hidden"
                 >
                     <div className="flex flex-col md:flex-row gap-12 lg:gap-16">
                         <div className="w-full md:w-1/2 relative z-10">

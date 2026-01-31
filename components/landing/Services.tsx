@@ -57,7 +57,7 @@ export default function Services() {
                     {outcomes.map((item, index) => (
                         <motion.div
                             key={index}
-                            className="group p-10 rounded-[2.5rem] bg-white border border-gray-100/50 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 h-full flex flex-col items-center text-center hover:border-[#FF014F]/20"
+                            className="group p-6 md:p-10 rounded-[2.5rem] bg-white border border-gray-100/50 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 h-full flex flex-col items-center text-center hover:border-[#FF014F]/20"
                             variants={fadeUp}
                         >
                             <div className="mb-6 text-[#FF014F] transition-transform duration-300 group-hover:scale-110">

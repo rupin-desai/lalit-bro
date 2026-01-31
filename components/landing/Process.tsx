@@ -31,7 +31,7 @@ export default function Process() {
                         whileInView="visible"
                         viewport={{ once: true }}
                         variants={fadeUp}
-                        className="bg-white p-12 rounded-[2.5rem] border border-gray-200/60 transition-all duration-300 hover:border-[#FF014F]/30 relative overflow-hidden group"
+                        className="bg-white p-6 md:p-12 rounded-[2.5rem] border border-gray-200/60 transition-all duration-300 hover:border-[#FF014F]/30 relative overflow-hidden group"
                     >
                         <div className="absolute top-0 right-0 p-8 opacity-10 font-rajdhani font-black text-9xl text-[#FF014F] leading-none select-none -mr-4 -mt-4 transition-transform group-hover:scale-110 duration-500">
                             01
