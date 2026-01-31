@@ -11,7 +11,7 @@ import Footer from '@/components/landing/Footer';
 
 export default function LandingPage() {
   return (
-    <main className="min-h-screen bg-white font-rubik text-landing-body selection:bg-landing-primary selection:text-white">
+    <main className="min-h-screen bg-transparent font-rubik text-landing-body selection:bg-landing-primary selection:text-white">
       <Header />
       <Hero />
       <Stats />

@@ -18,8 +18,7 @@
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+
 
   /* Landing Theme variables removed - hardcoded in components */
 
@@ -28,8 +27,7 @@
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+
 
   /* Landing Page Theme - Blue Scheme */
   /* Colors hardcoded in components */
@@ -38,18 +36,13 @@
   --font-satoshi: "Satoshi", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: transparent;
+  color: #171717;
   font-family: 'Satoshi', sans-serif;
-  
+
   /* Global Background handled by GridBackground component */
 }
 

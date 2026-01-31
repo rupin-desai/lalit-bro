@@ -21,7 +21,7 @@ export default function Header() {
                 <div className="flex items-center">
                     <a href="#" className="flex items-center gap-2">
                         {/* Assuming we stick with a text logo or the existing image */}
-                        <img src="/assets/reeni/logo-black.png" alt="Doob" className="h-8 md:h-10" />
+                        <img src="/assets/reeni/logo-black.png" alt="Kapil Chandak" className="h-8 md:h-10" />
                     </a>
                 </div>
 

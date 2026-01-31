@@ -18,7 +18,7 @@ export default function Footer() {
                     {/* Brand Section */}
                     <motion.div className="space-y-6" variants={fadeUp}>
                         <a href="#" className="flex items-center gap-2">
-                            <img src="/assets/reeni/logo-white.png" alt="Lalit Bro" className="h-10" />
+                            <img src="/assets/reeni/logo-white.png" alt="Kapil Chandak" className="h-10" />
                         </a>
                         <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
                             Helping businesses scale with clarity and direction. We build sustainable growth engines for modern brands.
@@ -69,8 +69,8 @@ export default function Footer() {
                                 </div>
                                 <div>
                                     <p className="text-xs text-gray-500 mb-1 uppercase tracking-wider">Email us at</p>
-                                    <a href="mailto:connect@lalit.com" className="text-white font-medium hover:text-[#FF014F] transition-colors">
-                                        connect@lalit.com
+                                    <a href="mailto:connect@kapilchandak.com" className="text-white font-medium hover:text-[#FF014F] transition-colors">
+                                        connect@kapilchandak.com
                                     </a>
                                 </div>
                             </li>
@@ -89,9 +89,9 @@ export default function Footer() {
                     </motion.div>
                 </motion.div>
 
-                <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div className="border-t border-gray-800 pt-8 flex justify-center items-center">
                     <p className="text-gray-500 text-sm">
-                        © {new Date().getFullYear()} Lalit Bro. All rights reserved.
+                        © {new Date().getFullYear()} Kapil Chandak. All rights reserved.
                     </p>
                 </div>
             </div>

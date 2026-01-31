@@ -22,7 +22,7 @@ export default function Stats() {
                         >
                             <div className="relative z-10 rounded-2xl overflow-hidden transition-transform duration-500 group-hover:scale-[1.02]">
                                 {/* Assuming 2.png is the profile image */}
-                                <img src="/2.png" alt="CA Kapil Chandak" className="w-full h-[700px] object-cover" />
+                                <img src="/2.png" alt="CA Kapil Chandak" className="w-full h-auto aspect-[3/4] md:h-[600px] lg:h-[700px] object-cover" />
                             </div>
                             {/* Decorative elements */}
                             <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-dots-pattern opacity-20 z-0"></div>

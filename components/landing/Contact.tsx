@@ -10,7 +10,7 @@ export default function Contact() {
     const titleWords = cleanText("Clarity before spend. Direction before scale.");
 
     return (
-        <section className="py-20 bg-[#F9FAFB] relative overflow-hidden" id="contact">
+        <section className="py-20  relative overflow-hidden" id="contact">
             {/* Background Blob */}
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[1000px] h-[1000px] bg-linear-to-b from-[#FF014F]/5 to-transparent rounded-full blur-3xl -z-10 pointer-events-none"></div>
 

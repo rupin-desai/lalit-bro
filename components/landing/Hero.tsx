@@ -17,7 +17,7 @@ export default function Hero() {
     const part2Words = cleanText("It needs clarity on what to stop.");
 
     return (
-        <section className="relative min-h-[130vh] flex items-center pt-24 pb-12 lg:pt-0 lg:pb-0 bg-transparent overflow-hidden">
+        <section className="relative min-h-[100dvh] lg:min-h-[110vh] flex items-center pt-24 pb-12 lg:pt-0 lg:pb-0 bg-transparent overflow-hidden">
             <div className="container mx-auto px-6 md:px-12 lg:px-24 relative z-10 h-full flex flex-col justify-center">
                 <div className="flex flex-col lg:flex-row items-center gap-12 lg:h-full lg:min-h-[600px]">
                     {/* Text Content */}
@@ -95,7 +95,7 @@ export default function Hero() {
                     {/* Hero Image / Illustration */}
                     <div className="w-full lg:w-2/5 order-1 lg:order-2 relative flex items-center justify-center mt-8 lg:mt-16">
                         <motion.div
-                            className="relative z-10 rounded-2xl overflow-hidden border-4 border-white/50 w-full max-w-[320px] lg:max-w-[450px]"
+                            className="relative z-10 rounded-2xl overflow-hidden border-4 border-white/50 w-full max-w-[320px] lg:max-w-[650px]"
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true }}
