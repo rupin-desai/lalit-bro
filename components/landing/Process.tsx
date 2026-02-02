@@ -46,36 +46,36 @@ export default function Process() {
                             <span className="font-bold text-[#1d1d1d]">Purpose:</span> Identify what’s working, what’s not, and what lacks logic.
                         </p>
 
-                        <div className="space-y-4 mb-8 text-[#1d1d1d] font-medium text-base">
+                        <div className="space-y-4 mb-8 text-[#1d1d1d] font-medium text-lg">
                             <div className="flex items-start">
                                 <span className="w-2 h-2 bg-[#FF014F] rounded-full mr-3 mt-2 shrink-0"></span>
                                 <div>
                                     Duration: 45–60 minutes
                                     <br />
-                                    <span className="text-sm text-[#4b5563] font-normal">(Founder + Marketing Head)</span>
+                                    <span className="text-base text-[#4b5563] font-normal">(Founder + Marketing Head)</span>
                                 </div>
                             </div>
                         </div>
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8 pt-6 border-t border-gray-100">
                             <div>
-                                <p className="text-xs font-bold text-red-500 uppercase mb-2 tracking-wider">This is NOT:</p>
-                                <ul className="space-y-2 text-sm text-[#4b5563]">
-                                    <li className="flex items-center gap-2"><X className="w-4 h-4 text-red-500 shrink-0" /> Tool audits</li>
-                                    <li className="flex items-center gap-2"><X className="w-4 h-4 text-red-500 shrink-0" /> Platform reports</li>
-                                    <li className="flex items-center gap-2"><X className="w-4 h-4 text-red-500 shrink-0" /> Dashboard reviews</li>
+                                <p className="text-sm font-bold text-red-500 uppercase mb-2 tracking-wider">This is NOT:</p>
+                                <ul className="space-y-2 text-base text-[#4b5563]">
+                                    <li className="flex items-center gap-2"><X className="w-5 h-5 text-red-500 shrink-0" /> Tool audits</li>
+                                    <li className="flex items-center gap-2"><X className="w-5 h-5 text-red-500 shrink-0" /> Platform reports</li>
+                                    <li className="flex items-center gap-2"><X className="w-5 h-5 text-red-500 shrink-0" /> Dashboard reviews</li>
                                 </ul>
                             </div>
                             <div>
-                                <p className="text-xs font-bold text-green-600 uppercase mb-2 tracking-wider">This IS:</p>
-                                <p className="text-sm text-[#1d1d1d] font-medium flex items-start gap-2">
-                                    <Check className="w-4 h-4 text-green-600 shrink-0 mt-0.5" /> Review of marketing thinking & decision logic
+                                <p className="text-sm font-bold text-green-600 uppercase mb-2 tracking-wider">This IS:</p>
+                                <p className="text-base text-[#1d1d1d] font-medium flex items-start gap-2 leading-relaxed">
+                                    <Check className="w-5 h-5 text-green-600 shrink-0 mt-0.5" /> Review of marketing thinking & decision logic
                                 </p>
                             </div>
                         </div>
 
                         <div className="mb-8">
-                            <p className="text-sm font-bold text-[#1d1d1d] mb-3 uppercase tracking-wider">We Cover:</p>
+                            <p className="text-base font-bold text-[#1d1d1d] mb-3 uppercase tracking-wider">We Cover:</p>
                             <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2 text-base text-[#4b5563]">
                                 <li className="flex items-start gap-2">
                                     <span className="w-1.5 h-1.5 bg-[#FF014F] rounded-full mt-2 shrink-0"></span>
@@ -130,7 +130,7 @@ export default function Process() {
                             </p>
 
                             <div className="mb-8">
-                                <p className="text-sm font-bold text-[#1d1d1d] mb-3 uppercase tracking-wider">We Define:</p>
+                                <p className="text-base font-bold text-[#1d1d1d] mb-3 uppercase tracking-wider">We Define:</p>
                                 <ul className="space-y-2 text-base text-[#4b5563]">
                                     {[
                                         'Clear marketing objective',
@@ -147,8 +147,8 @@ export default function Process() {
                             </div>
 
                             <div className="mb-8">
-                                <p className="text-sm font-bold text-[#1d1d1d] mb-3 uppercase tracking-wider">Key Outputs:</p>
-                                <ul className="space-y-4 text-base text-[#4b5563]">
+                                <p className="text-base font-bold text-[#1d1d1d] mb-3 uppercase tracking-wider">Key Outputs:</p>
+                                <ul className="space-y-4 text-lg text-[#4b5563]">
                                     <li className="flex flex-col gap-1">
                                         <span className="font-bold text-[#1d1d1d]">Things to STOP immediately:</span>
                                         <span>Activities draining resources without strategic value.</span>

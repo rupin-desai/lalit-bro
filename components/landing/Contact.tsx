@@ -202,7 +202,7 @@ export default function Contact() {
                         variants={fadeUp}
                         className="text-[#4b5563] text-lg max-w-2xl mx-auto"
                     >
-                        Book a Strategic Clarity Conversation with <span className="font-bold text-[#1d1d1d]">CA Kapil Chandak | Digital Marketing Strategy Expert</span>
+                        Book a Strategic Clarity Conversation with <span className="font-bold text-[#1d1d1d]">Digioutreach | Digital Marketing Strategy Expert</span>
                     </motion.p>
                 </div>
 
