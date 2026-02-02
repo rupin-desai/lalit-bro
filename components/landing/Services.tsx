@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { Ban, Rocket, EyeOff, Compass } from 'lucide-react';
+import { OctagonX, TrendingUp, ScanEye } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { fadeUp, staggerContainer } from '../AnimationUtils';
 
@@ -8,22 +8,17 @@ const outcomes = [
     {
         title: 'What to STOP immediately',
         description: 'Activities draining time and money without strategic value.',
-        Icon: Ban
+        Icon: OctagonX
     },
     {
         title: 'What to MULTIPLY',
         description: 'High-impact actions that drive measurable growth.',
-        Icon: Rocket
+        Icon: TrendingUp
     },
     {
         title: 'Your Key Blind Spot',
         description: 'The one insight silently limiting scale that wasn’t visible before.',
-        Icon: EyeOff
-    },
-    {
-        title: 'Leadership Clarity',
-        description: 'Decisions become a reference for leadership, not a report that sits unused.',
-        Icon: Compass
+        Icon: ScanEye
     }
 ];
 
@@ -52,7 +47,7 @@ export default function Services() {
                     whileInView="visible"
                     viewport={{ once: true }}
                     variants={staggerContainer}
-                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
                 >
                     {outcomes.map((item, index) => (
                         <motion.div

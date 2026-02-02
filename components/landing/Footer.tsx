@@ -7,7 +7,7 @@ import { staggerContainer, fadeUp } from '../AnimationUtils';
 export default function Footer() {
     return (
         <footer className="bg-[#1d1d1d] pt-20 pb-10 border-t border-gray-800">
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto px-6 md:px-12">
                 <motion.div
                     className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16"
                     initial="hidden"
@@ -18,9 +18,9 @@ export default function Footer() {
                     {/* Brand Section */}
                     <motion.div className="space-y-6" variants={fadeUp}>
                         <a href="#" className="flex items-center gap-2">
-                            <img src="/assets/reeni/logo-white.png" alt="Kapil Chandak" className="h-10" />
+                            <img src="/logos/logo_full.png" alt="Digioutreach" className="h-16 bg-white rounded-lg p-1" />
                         </a>
-                        <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
+                        <p className="text-gray-400 text-base leading-relaxed max-w-xs">
                             Helping businesses scale with clarity and direction. We build sustainable growth engines for modern brands.
                         </p>
                         <div className="flex gap-4">
@@ -49,7 +49,7 @@ export default function Footer() {
                                 <li key={item}>
                                     <a
                                         href={item === 'Home' ? '#' : `#${item.toLowerCase()}`}
-                                        className="text-gray-400 hover:text-[#FF014F] transition-colors flex items-center gap-2 group text-sm"
+                                        className="text-gray-400 hover:text-[#FF014F] transition-colors flex items-center gap-2 group text-base"
                                     >
                                         <ArrowRight size={14} className="opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300 text-[#FF014F]" />
                                         {item}
@@ -68,8 +68,8 @@ export default function Footer() {
                                     <Mail size={18} />
                                 </div>
                                 <div>
-                                    <p className="text-xs text-gray-500 mb-1 uppercase tracking-wider">Email us at</p>
-                                    <a href="mailto:connect@kapilchandak.com" className="text-white font-medium hover:text-[#FF014F] transition-colors">
+                                    <p className="text-sm text-gray-500 mb-1 uppercase tracking-wider">Email us at</p>
+                                    <a href="mailto:connect@kapilchandak.com" className="text-white font-medium hover:text-[#FF014F] transition-colors text-lg">
                                         connect@kapilchandak.com
                                     </a>
                                 </div>
@@ -79,8 +79,8 @@ export default function Footer() {
                                     <MapPin size={18} />
                                 </div>
                                 <div>
-                                    <p className="text-xs text-gray-500 mb-1 uppercase tracking-wider">Located at</p>
-                                    <p className="text-white font-medium">
+                                    <p className="text-sm text-gray-500 mb-1 uppercase tracking-wider">Located at</p>
+                                    <p className="text-white font-medium text-lg">
                                         Mumbai, India
                                     </p>
                                 </div>
@@ -90,8 +90,8 @@ export default function Footer() {
                 </motion.div>
 
                 <div className="border-t border-gray-800 pt-8 flex justify-center items-center">
-                    <p className="text-gray-500 text-sm">
-                        © {new Date().getFullYear()} Kapil Chandak. All rights reserved.
+                    <p className="text-gray-500 text-base">
+                        © {new Date().getFullYear()} Digioutreach. All rights reserved.
                     </p>
                 </div>
             </div>

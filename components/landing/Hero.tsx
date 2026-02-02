@@ -17,7 +17,7 @@ export default function Hero() {
     const part2Words = cleanText("It needs clarity on what to stop.");
 
     return (
-        <section className="relative min-h-dvh lg:min-h-[110vh] flex items-center pt-24 pb-12 lg:pt-0 lg:pb-0 bg-transparent overflow-hidden">
+        <section className="relative min-h-dvh lg:min-h-[100vh] flex items-center pt-24 pb-12 lg:pt-0 lg:pb-0 bg-transparent overflow-hidden">
             <div className="container mx-auto px-6 md:px-12 lg:px-24 relative z-10 h-full flex flex-col justify-center">
                 <div className="flex flex-col lg:flex-row items-center gap-12 lg:h-full lg:min-h-[600px]">
                     {/* Text Content */}
@@ -89,7 +89,7 @@ export default function Hero() {
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4">
-                                <a href="https://calendly.com/kapilchandak-digioutreach/digital-marketing-strategy-advisor" className="invoke-btn group relative inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white transition-all duration-300 bg-[#FF014F] rounded-full hover:shadow-[0_10px_20px_rgba(255,1,79,0.3)] hover:-translate-y-1 overflow-hidden">
+                                <a href="#contact" className="invoke-btn group relative inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white transition-all duration-300 bg-[#FF014F] rounded-full hover:shadow-[0_10px_20px_rgba(255,1,79,0.3)] hover:-translate-y-1 overflow-hidden">
                                     <span className="relative z-10">Get Digital Marketing Clarity Audit</span>
                                     <ArrowRight className="w-5 h-5 ml-2 relative z-10 transform group-hover:translate-x-1 transition-transform" />
                                     <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>

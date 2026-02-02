@@ -35,15 +35,23 @@ export default function Pricing() {
                                 This is not a fixed-fee audit. Most founders coming here are already spending <strong className="text-[#1d1d1d]">₹5L–₹50L+ per year</strong> on marketing — often without full clarity.
                             </p>
 
+                            <p className="text-lg text-[#1d1d1d] font-bold mb-6 leading-relaxed">
+                                Honorarium is decided after Phase 2, based on the value this clarity creates for your business.
+                            </p>
+
                             <div className="bg-white p-8 rounded-2xl border-l-4 border-[#FF014F] shadow-sm mb-6">
                                 <p className="text-lg font-bold text-[#1d1d1d] mb-1">Anchor Price</p>
                                 <p className="text-[#4b5563] text-sm mb-4">Typical honorarium range</p>
-                                <p className="text-5xl font-bold text-[#FF014F] font-rajdhani">₹20k – ₹80k+</p>
+                                <p className="text-5xl font-bold text-[#FF014F] font-rajdhani mb-6">₹20k – ₹80k+</p>
+
+                                <div className="p-4 bg-red-50 rounded-lg border border-red-100">
+                                    <p className="text-[#1d1d1d] font-bold text-base italic leading-relaxed">
+                                        "If this clarity doesn’t materially change how you think or decide, you shouldn’t pay for it."
+                                    </p>
+                                </div>
                             </div>
 
-                            <p className="text-sm text-[#4b5563] italic opacity-80">
-                                *Honorarium is decided after Phase 2, based on the value this clarity creates for your business.
-                            </p>
+
                         </div>
 
                         <div className="w-full md:w-1/2 relative z-10">
@@ -72,11 +80,7 @@ export default function Pricing() {
                                 </li>
                             </ul>
 
-                            <div className="mt-10 pt-8 border-t border-gray-200">
-                                <p className="font-medium text-[#1d1d1d] text-lg leading-relaxed">
-                                    "If this clarity doesn’t materially change how you think or decide, you shouldn’t pay for it."
-                                </p>
-                            </div>
+
                         </div>
                     </div>
                     {/* Background Decoration */}

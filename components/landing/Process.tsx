@@ -36,43 +36,74 @@ export default function Process() {
                         <div className="absolute top-0 right-0 p-8 opacity-10 font-rajdhani font-black text-9xl text-[#FF014F] leading-none select-none -mr-4 -mt-4 transition-transform group-hover:scale-110 duration-500">
                             01
                         </div>
-                        <div className="relative z-10">
-                            <span className="inline-block py-1 px-3 rounded-full bg-red-50 text-[#FF014F] text-sm font-bold tracking-widest uppercase mb-6">
-                                Phase 1
-                            </span>
-                            <h3 className="text-3xl font-bold text-[#1d1d1d] mb-4 font-rajdhani">
-                                Digital Marketing Clarity Audit
-                            </h3>
-                            <p className="text-lg text-[#4b5563] mb-8 leading-relaxed">
-                                Identify what’s working, what’s not, and what lacks logic.
-                            </p>
+                        <span className="inline-block py-1 px-3 rounded-full bg-red-50 text-[#FF014F] text-sm font-bold tracking-widest uppercase mb-6">
+                            Phase 1
+                        </span>
+                        <h3 className="text-3xl font-bold text-[#1d1d1d] mb-4 font-rajdhani">
+                            Digital Marketing Clarity Audit
+                        </h3>
+                        <p className="text-lg text-[#4b5563] mb-6 leading-relaxed">
+                            <span className="font-bold text-[#1d1d1d]">Purpose:</span> Identify what’s working, what’s not, and what lacks logic.
+                        </p>
 
-                            <div className="space-y-4 mb-8">
-                                <div className="flex items-center text-[#1d1d1d] font-medium text-base">
-                                    <span className="w-2 h-2 bg-[#FF014F] rounded-full mr-3"></span>
+                        <div className="space-y-4 mb-8 text-[#1d1d1d] font-medium text-base">
+                            <div className="flex items-start">
+                                <span className="w-2 h-2 bg-[#FF014F] rounded-full mr-3 mt-2 shrink-0"></span>
+                                <div>
                                     Duration: 45–60 minutes
-                                </div>
-                                <div className="flex items-center text-[#1d1d1d] font-medium text-base">
-                                    <span className="w-2 h-2 bg-[#FF014F] rounded-full mr-3"></span>
-                                    Participants: Founder + Marketing Head
+                                    <br />
+                                    <span className="text-sm text-[#4b5563] font-normal">(Founder + Marketing Head)</span>
                                 </div>
                             </div>
+                        </div>
 
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 pt-8 border-t border-gray-100">
-                                <div>
-                                    <p className="text-sm font-bold text-red-500 uppercase mb-2 tracking-wider">This is NOT:</p>
-                                    <ul className="space-y-1 text-base text-[#4b5563]">
-                                        <li className="flex items-center gap-2"><X className="w-4 h-4 text-red-500" /> Tool audits</li>
-                                        <li className="flex items-center gap-2"><X className="w-4 h-4 text-red-500" /> Platform reports</li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <p className="text-sm font-bold text-green-600 uppercase mb-2 tracking-wider">This IS:</p>
-                                    <p className="text-base text-[#1d1d1d] font-medium flex items-center gap-2">
-                                        <Check className="w-4 h-4 text-green-600" /> Review of marketing thinking & logic
-                                    </p>
-                                </div>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8 pt-6 border-t border-gray-100">
+                            <div>
+                                <p className="text-xs font-bold text-red-500 uppercase mb-2 tracking-wider">This is NOT:</p>
+                                <ul className="space-y-2 text-sm text-[#4b5563]">
+                                    <li className="flex items-center gap-2"><X className="w-4 h-4 text-red-500 shrink-0" /> Tool audits</li>
+                                    <li className="flex items-center gap-2"><X className="w-4 h-4 text-red-500 shrink-0" /> Platform reports</li>
+                                    <li className="flex items-center gap-2"><X className="w-4 h-4 text-red-500 shrink-0" /> Dashboard reviews</li>
+                                </ul>
                             </div>
+                            <div>
+                                <p className="text-xs font-bold text-green-600 uppercase mb-2 tracking-wider">This IS:</p>
+                                <p className="text-sm text-[#1d1d1d] font-medium flex items-start gap-2">
+                                    <Check className="w-4 h-4 text-green-600 shrink-0 mt-0.5" /> Review of marketing thinking & decision logic
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="mb-8">
+                            <p className="text-sm font-bold text-[#1d1d1d] mb-3 uppercase tracking-wider">We Cover:</p>
+                            <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2 text-base text-[#4b5563]">
+                                <li className="flex items-start gap-2">
+                                    <span className="w-1.5 h-1.5 bg-[#FF014F] rounded-full mt-2 shrink-0"></span>
+                                    Business goals vs marketing goals
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="w-1.5 h-1.5 bg-[#FF014F] rounded-full mt-2 shrink-0"></span>
+                                    Funnel clarity (or absence)
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="w-1.5 h-1.5 bg-[#FF014F] rounded-full mt-2 shrink-0"></span>
+                                    Budget logic & spend direction
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="w-1.5 h-1.5 bg-[#FF014F] rounded-full mt-2 shrink-0"></span>
+                                    Content intent & focus
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="w-1.5 h-1.5 bg-[#FF014F] rounded-full mt-2 shrink-0"></span>
+                                    Current growth bottlenecks
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div className="pt-6 border-t border-gray-100">
+                            <p className="text-base text-[#1d1d1d] font-bold">
+                                <span className="text-[#FF014F]">Outcome:</span> Clear understanding of the <span className="italic">real</span> problems and leak points.
+                            </p>
                         </div>
                     </motion.div>
 
@@ -95,27 +126,47 @@ export default function Process() {
                                 Growth Direction Blueprint
                             </h3>
                             <p className="text-lg text-[#4b5563] mb-8 leading-relaxed">
-                                Convert clarity into leadership decisions.
+                                <span className="font-bold text-[#1d1d1d]">Purpose:</span> Convert clarity into leadership decisions
                             </p>
 
-                            <p className="text-base font-bold text-[#1d1d1d] mb-4 uppercase tracking-wide">We define:</p>
-                            <div className="flex flex-wrap gap-2 mb-8">
-                                {[
-                                    { text: 'Target Objective', Icon: Target },
-                                    { text: 'Funnel Priorities', Icon: Filter },
-                                    { text: 'Budget Logic', Icon: Wallet },
-                                    { text: 'Content Alignment', Icon: TrendingUp }
-                                ].map((item, i) => (
-                                    <span key={i} className="px-4 py-2 bg-gray-50 text-[#1d1d1d] text-base font-medium rounded-lg border border-gray-100 flex items-center gap-2">
-                                        <item.Icon className="w-4 h-4 text-purple-600" />
-                                        {item.text}
-                                    </span>
-                                ))}
+                            <div className="mb-8">
+                                <p className="text-sm font-bold text-[#1d1d1d] mb-3 uppercase tracking-wider">We Define:</p>
+                                <ul className="space-y-2 text-base text-[#4b5563]">
+                                    {[
+                                        'Clear marketing objective',
+                                        'Funnel-level priorities',
+                                        'Budget allocation logic',
+                                        'Content & performance alignment'
+                                    ].map((item, i) => (
+                                        <li key={i} className="flex items-start gap-2">
+                                            <span className="w-1.5 h-1.5 bg-purple-600 rounded-full mt-2 shrink-0"></span>
+                                            {item}
+                                        </li>
+                                    ))}
+                                </ul>
                             </div>
 
-                            <div className="mt-auto pt-6 border-t border-gray-100">
-                                <p className="text-base text-purple-900 font-medium italic">
-                                    "These decisions become a reference for leadership, not a report that sits unused."
+                            <div className="mb-8">
+                                <p className="text-sm font-bold text-[#1d1d1d] mb-3 uppercase tracking-wider">Key Outputs:</p>
+                                <ul className="space-y-4 text-base text-[#4b5563]">
+                                    <li className="flex flex-col gap-1">
+                                        <span className="font-bold text-[#1d1d1d]">Things to STOP immediately:</span>
+                                        <span>Activities draining resources without strategic value.</span>
+                                    </li>
+                                    <li className="flex flex-col gap-1">
+                                        <span className="font-bold text-[#1d1d1d]">Things to MULTIPLY:</span>
+                                        <span>High-impact actions that drive measurable growth.</span>
+                                    </li>
+                                    <li className="flex flex-col gap-1">
+                                        <span className="font-bold text-[#1d1d1d]">Key strategic blind spot:</span>
+                                        <span>The key insight holding back growth that wasn't visible before.</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div className="pt-6 border-t border-gray-100">
+                                <p className="text-base text-[#1d1d1d] font-medium italic">
+                                    "These decisions become a <span className="font-bold not-italic">reference for leadership</span>, not a report that sits unused."
                                 </p>
                             </div>
                         </div>

@@ -19,11 +19,19 @@ const faqs = [
     },
     {
         question: "Is this a consulting or execution engagement?",
-        answer: "This is a clarity and decision engagement. You leave with what to stop, what to focus on, and how to allocate budget. Execution can happen with your existing team or agency."
+        answer: "This is a clarity and decision engagement. You leave with: What to stop, What to focus on, and How to allocate effort and budget. Execution can happen with your existing team or agency."
     },
     {
         question: "How is this different from a marketing audit?",
         answer: "Most audits tell you what happened. This tells you what decisions to take next. No tools. No dashboards. No reports that sit unused."
+    },
+    {
+        question: "Who is this not for?",
+        answer: "Businesses looking for cheap audits. Founders without decision authority. Teams looking for execution or tools training. This is for leadership teams who want clarity before spending more."
+    },
+    {
+        question: "What kind of businesses is this most valuable for?",
+        answer: "Typically valuable for businesses that: Already have a marketing team or agency. Are spending ₹1L+/month on marketing. Feel growth should be better than it is."
     }
 ];
 
@@ -32,7 +40,7 @@ export default function FAQ() {
 
     return (
         <section className="py-12 bg-transparent" id="faq">
-            <div className="container mx-auto px-4 max-w-4xl">
+            <div className="container mx-auto px-4 max-w-6xl">
                 <motion.div
                     initial="hidden"
                     whileInView="visible"
@@ -51,7 +59,7 @@ export default function FAQ() {
                     whileInView="visible"
                     viewport={{ once: true }}
                     variants={staggerContainer}
-                    className="space-y-5"
+                    className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start"
                 >
                     {faqs.map((faq, index) => (
                         <motion.div

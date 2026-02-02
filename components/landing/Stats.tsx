@@ -8,7 +8,7 @@ export default function Stats() {
     const titleWords = cleanText("Led by CA Kapil Chandak");
 
     return (
-        <section className="py-12 bg-transparent">
+        <section className="py-0 bg-transparent">
             <div className="container mx-auto px-4">
                 <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
                     {/* Left: Authority Profile */}
