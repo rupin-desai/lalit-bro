@@ -1,11 +1,13 @@
 'use client';
 import React, { useState, useEffect, useRef } from 'react';
-import { ArrowRight, Lock, RefreshCw } from 'lucide-react';
+import emailjs from '@emailjs/browser';
+import { ArrowRight, Lock, RefreshCw, Loader2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { fadeUp, wordContainer, wordItem, cleanText } from '../AnimationUtils';
 
 export default function Contact() {
     const [step, setStep] = useState(1);
+    const [isSubmitting, setIsSubmitting] = useState(false);
     const [formData, setFormData] = useState({
         name: '',
         mobile: '',
@@ -18,6 +20,8 @@ export default function Contact() {
     const [startTime, setStartTime] = useState<number>(0);
     const captchaValue = useRef<string>('');
     const canvasRef = useRef<HTMLCanvasElement>(null);
+
+    // ... (rest of the code unchanged until handleFinalSubmit) ...
 
     // Security: Time-based validation & Initial Captcha
     useEffect(() => {
@@ -124,7 +128,7 @@ export default function Contact() {
         }
     };
 
-    const handleFinalSubmit = () => {
+    const handleFinalSubmit = async () => {
         const newErrors: Record<string, string> = {};
         const currentTime = Date.now();
 
@@ -154,9 +158,36 @@ export default function Contact() {
         setErrors(newErrors);
 
         if (Object.keys(newErrors).length === 0) {
-            // Success
-            localStorage.setItem('lastFormSubmission', currentTime.toString());
-            window.open('https://calendly.com/kapilchandak/digital-marketing-strategy-advisor?month=2026-02', '_blank');
+            setIsSubmitting(true);
+            try {
+                // EmailJS Integration
+                const templateParams = {
+                    name: formData.name,
+                    mobile: formData.mobile,
+                    website: formData.website || 'Not provided',
+                    team_size: formData.teamSize,
+                };
+
+                // EmailJS Integration
+                // 1. Service ID: service_oq34nme
+                // 2. Template ID: template_sw8eaom
+                // 3. Public Key: QS8GwLMvNJL9QeP0i
+                await emailjs.send(
+                    'service_oq34nme',
+                    'template_sw8eaom',
+                    templateParams,
+                    'QS8GwLMvNJL9QeP0i'
+                );
+
+                // Success
+                localStorage.setItem('lastFormSubmission', currentTime.toString());
+                window.open('https://calendly.com/kapilchandak/digital-marketing-strategy-advisor?month=2026-02', '_blank');
+            } catch (error) {
+                console.error('EmailJS Error:', error);
+                alert('Something went wrong. Please try again or contact us directly.');
+            } finally {
+                setIsSubmitting(false);
+            }
         }
     };
 
@@ -345,10 +376,20 @@ export default function Contact() {
 
                                         <button
                                             onClick={handleFinalSubmit}
-                                            className="w-full mt-2 px-10 py-4 bg-[#FF5722] text-white font-bold rounded-xl shadow-lg hover:shadow-[0_10px_20px_rgba(255,1,79,0.4)] transition-all duration-300 flex items-center justify-center gap-2"
+                                            disabled={isSubmitting}
+                                            className="w-full mt-2 px-10 py-4 bg-[#FF5722] text-white font-bold rounded-xl shadow-lg hover:shadow-[0_10px_20px_rgba(255,1,79,0.4)] transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
                                         >
-                                            Book My Clarity Call
-                                            <ArrowRight className="w-5 h-5" />
+                                            {isSubmitting ? (
+                                                <>
+                                                    <Loader2 className="w-5 h-5 animate-spin" />
+                                                    Sending...
+                                                </>
+                                            ) : (
+                                                <>
+                                                    Book My Clarity Call
+                                                    <ArrowRight className="w-5 h-5" />
+                                                </>
+                                            )}
                                         </button>
                                         <button
                                             onClick={() => setStep(1)}

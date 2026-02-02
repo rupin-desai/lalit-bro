@@ -55,8 +55,8 @@ export default function Footer() {
                                 </div>
                                 <div>
                                     <p className="text-sm text-gray-500 mb-1 uppercase tracking-wider">Email us at</p>
-                                    <a href="mailto:connect@digioutreach.com" className="text-white font-medium hover:text-[#FF5722] transition-colors text-lg">
-                                        connect@digioutreach.com
+                                    <a href="mailto:Support@digioutreach.com" className="text-white font-medium hover:text-[#FF5722] transition-colors text-lg">
+                                        Support@digioutreach.com
                                     </a>
                                 </div>
                             </li>
