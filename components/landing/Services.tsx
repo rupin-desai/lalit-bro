@@ -52,10 +52,10 @@ export default function Services() {
                     {outcomes.map((item, index) => (
                         <motion.div
                             key={index}
-                            className="group p-6 md:p-10 rounded-[2.5rem] bg-white border border-gray-100/50 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 h-full flex flex-col items-center text-center hover:border-[#FF014F]/20"
+                            className="group p-6 md:p-10 rounded-[2.5rem] bg-white border border-gray-100/50 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 h-full flex flex-col items-center text-center hover:border-[#FF5722]/20"
                             variants={fadeUp}
                         >
-                            <div className="mb-6 text-[#FF014F] transition-transform duration-300 group-hover:scale-110">
+                            <div className="mb-6 text-[#FF5722] transition-transform duration-300 group-hover:scale-110">
                                 <item.Icon size={48} strokeWidth={1.5} />
                             </div>
                             <h3 className="text-2xl font-bold text-[#1d1d1d] mb-4 font-rajdhani">

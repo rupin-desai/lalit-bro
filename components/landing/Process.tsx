@@ -15,7 +15,7 @@ export default function Process() {
                     variants={staggerContainer}
                     className="text-center mb-20"
                 >
-                    <motion.span variants={fadeUp} className="text-[#FF014F] font-bold text-sm uppercase tracking-widest block">How It Works</motion.span>
+                    <motion.span variants={fadeUp} className="text-[#FF5722] font-bold text-sm uppercase tracking-widest block">How It Works</motion.span>
                     <motion.h2 variants={fadeUp} className="text-4xl md:text-5xl font-bold text-[#1d1d1d] mt-3 mb-6 font-rajdhani">
                         A 2-Phase Strategic <br /> Clarity Engagement
                     </motion.h2>
@@ -31,12 +31,12 @@ export default function Process() {
                         whileInView="visible"
                         viewport={{ once: true }}
                         variants={fadeUp}
-                        className="bg-white p-6 md:p-12 rounded-[2.5rem] border border-gray-200/60 transition-all duration-300 hover:border-[#FF014F]/30 relative overflow-hidden group"
+                        className="bg-white p-6 md:p-12 rounded-[2.5rem] border border-gray-200/60 transition-all duration-300 hover:border-[#FF5722]/30 relative overflow-hidden group"
                     >
-                        <div className="absolute top-0 right-0 p-8 opacity-10 font-rajdhani font-black text-9xl text-[#FF014F] leading-none select-none -mr-4 -mt-4 transition-transform group-hover:scale-110 duration-500">
+                        <div className="absolute top-0 right-0 p-8 opacity-10 font-rajdhani font-black text-9xl text-[#FF5722] leading-none select-none -mr-4 -mt-4 transition-transform group-hover:scale-110 duration-500">
                             01
                         </div>
-                        <span className="inline-block py-1 px-3 rounded-full bg-red-50 text-[#FF014F] text-sm font-bold tracking-widest uppercase mb-6">
+                        <span className="inline-block py-1 px-3 rounded-full bg-red-50 text-[#FF5722] text-sm font-bold tracking-widest uppercase mb-6">
                             Phase 1
                         </span>
                         <h3 className="text-3xl font-bold text-[#1d1d1d] mb-4 font-rajdhani">
@@ -48,7 +48,7 @@ export default function Process() {
 
                         <div className="space-y-4 mb-8 text-[#1d1d1d] font-medium text-lg">
                             <div className="flex items-start">
-                                <span className="w-2 h-2 bg-[#FF014F] rounded-full mr-3 mt-2 shrink-0"></span>
+                                <span className="w-2 h-2 bg-[#FF5722] rounded-full mr-3 mt-2 shrink-0"></span>
                                 <div>
                                     Duration: 45–60 minutes
                                     <br />
@@ -78,23 +78,23 @@ export default function Process() {
                             <p className="text-base font-bold text-[#1d1d1d] mb-3 uppercase tracking-wider">We Cover:</p>
                             <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2 text-base text-[#4b5563]">
                                 <li className="flex items-start gap-2">
-                                    <span className="w-1.5 h-1.5 bg-[#FF014F] rounded-full mt-2 shrink-0"></span>
+                                    <span className="w-1.5 h-1.5 bg-[#FF5722] rounded-full mt-2 shrink-0"></span>
                                     Business goals vs marketing goals
                                 </li>
                                 <li className="flex items-start gap-2">
-                                    <span className="w-1.5 h-1.5 bg-[#FF014F] rounded-full mt-2 shrink-0"></span>
+                                    <span className="w-1.5 h-1.5 bg-[#FF5722] rounded-full mt-2 shrink-0"></span>
                                     Funnel clarity (or absence)
                                 </li>
                                 <li className="flex items-start gap-2">
-                                    <span className="w-1.5 h-1.5 bg-[#FF014F] rounded-full mt-2 shrink-0"></span>
+                                    <span className="w-1.5 h-1.5 bg-[#FF5722] rounded-full mt-2 shrink-0"></span>
                                     Budget logic & spend direction
                                 </li>
                                 <li className="flex items-start gap-2">
-                                    <span className="w-1.5 h-1.5 bg-[#FF014F] rounded-full mt-2 shrink-0"></span>
+                                    <span className="w-1.5 h-1.5 bg-[#FF5722] rounded-full mt-2 shrink-0"></span>
                                     Content intent & focus
                                 </li>
                                 <li className="flex items-start gap-2">
-                                    <span className="w-1.5 h-1.5 bg-[#FF014F] rounded-full mt-2 shrink-0"></span>
+                                    <span className="w-1.5 h-1.5 bg-[#FF5722] rounded-full mt-2 shrink-0"></span>
                                     Current growth bottlenecks
                                 </li>
                             </ul>
@@ -102,7 +102,7 @@ export default function Process() {
 
                         <div className="pt-6 border-t border-gray-100">
                             <p className="text-base text-[#1d1d1d] font-bold">
-                                <span className="text-[#FF014F]">Outcome:</span> Clear understanding of the <span className="italic">real</span> problems and leak points.
+                                <span className="text-[#FF5722]">Outcome:</span> Clear understanding of the <span className="italic">real</span> problems and leak points.
                             </p>
                         </div>
                     </motion.div>

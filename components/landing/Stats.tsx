@@ -26,7 +26,7 @@ export default function Stats() {
                             </div>
                             {/* Decorative elements */}
                             <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-dots-pattern opacity-20 z-0"></div>
-                            <div className="absolute -top-6 -left-6 w-24 h-24 rounded-full bg-[#FF014F] opacity-5 z-0 blur-2xl"></div>
+                            <div className="absolute -top-6 -left-6 w-24 h-24 rounded-full bg-[#FF5722] opacity-5 z-0 blur-2xl"></div>
                         </motion.div>
                     </div>
 
@@ -37,7 +37,7 @@ export default function Stats() {
                             whileInView="visible"
                             viewport={{ once: true }}
                             variants={fadeUp}
-                            className="text-[#FF014F] font-bold uppercase tracking-widest text-sm mb-3 block"
+                            className="text-[#FF5722] font-bold uppercase tracking-widest text-sm mb-3 block"
                         >
                             Digital Marketing Clarity Audit
                         </motion.span>
@@ -81,7 +81,7 @@ export default function Stats() {
                                 { end: 37000, suffix: '+', label: 'YouTube Subscribers' }
                             ].map((stat, index) => (
                                 <motion.div key={index} className="bg-white p-6 rounded-xl" variants={fadeUp}>
-                                    <h4 className="text-6xl lg:text-7xl font-bold font-rajdhani mb-2 text-[#FF014F]">
+                                    <h4 className="text-6xl lg:text-7xl font-bold font-rajdhani mb-2 text-[#FF5722]">
                                         <CountUp end={stat.end} duration={2.5} separator="," />
                                         <span className="ml-1">{stat.suffix}</span>
                                     </h4>

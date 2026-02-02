@@ -64,7 +64,7 @@ export default function Contact() {
 
                 // Add noise lines
                 for (let i = 0; i < 5; i++) {
-                    ctx.strokeStyle = '#FF014F';
+                    ctx.strokeStyle = '#FF5722';
                     ctx.lineWidth = 1;
                     ctx.beginPath();
                     ctx.moveTo(Math.random() * canvas.width, Math.random() * canvas.height);
@@ -165,7 +165,7 @@ export default function Contact() {
     return (
         <section className="py-20 relative overflow-hidden" id="contact">
             {/* Background Blob */}
-            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[1000px] h-[1000px] bg-linear-to-b from-[#FF014F]/5 to-transparent rounded-full blur-3xl -z-10 pointer-events-none"></div>
+            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[1000px] h-[1000px] bg-linear-to-b from-[#FF5722]/5 to-transparent rounded-full blur-3xl -z-10 pointer-events-none"></div>
 
             <div className="container mx-auto px-4">
                 <div className="text-center mb-12">
@@ -174,7 +174,7 @@ export default function Contact() {
                         whileInView="visible"
                         viewport={{ once: true }}
                         variants={fadeUp}
-                        className="text-[#FF014F] font-bold text-sm uppercase tracking-widest block"
+                        className="text-[#FF5722] font-bold text-sm uppercase tracking-widest block"
                     >
                         Start Results
                     </motion.span>
@@ -244,7 +244,7 @@ export default function Contact() {
                                                 name="name"
                                                 value={formData.name}
                                                 onChange={handleChange}
-                                                className={`w-full px-6 py-4 rounded-xl bg-gray-50 border ${errors.name ? 'border-red-500' : 'border-gray-100'} focus:border-[#FF014F] focus:ring-1 focus:ring-[#FF014F] outline-none transition-all placeholder:text-gray-400 font-medium`}
+                                                className={`w-full px-6 py-4 rounded-xl bg-gray-50 border ${errors.name ? 'border-red-500' : 'border-gray-100'} focus:border-[#FF5722] focus:ring-1 focus:ring-[#FF5722] outline-none transition-all placeholder:text-gray-400 font-medium`}
                                                 placeholder="Your Name"
                                             />
                                             {errors.name && <p className="text-red-500 text-xs mt-1 pl-2">{errors.name}</p>}
@@ -256,7 +256,7 @@ export default function Contact() {
                                                 name="mobile"
                                                 value={formData.mobile}
                                                 onChange={handleChange}
-                                                className={`w-full px-6 py-4 rounded-xl bg-gray-50 border ${errors.mobile ? 'border-red-500' : 'border-gray-100'} focus:border-[#FF014F] focus:ring-1 focus:ring-[#FF014F] outline-none transition-all placeholder:text-gray-400 font-medium`}
+                                                className={`w-full px-6 py-4 rounded-xl bg-gray-50 border ${errors.mobile ? 'border-red-500' : 'border-gray-100'} focus:border-[#FF5722] focus:ring-1 focus:ring-[#FF5722] outline-none transition-all placeholder:text-gray-400 font-medium`}
                                                 placeholder="+91 XXXXX XXXXX"
                                             />
                                             {errors.mobile && <p className="text-red-500 text-xs mt-1 pl-2">{errors.mobile}</p>}
@@ -265,17 +265,17 @@ export default function Contact() {
                                         {/* Security: Visual Captcha */}
                                         <div>
                                             <label className="block text-sm font-medium text-[#4b5563] mb-1 pl-2">Security Check <span className="text-red-500">*</span></label>
-                                            <div className="flex gap-4">
-                                                <div className="relative overflow-hidden rounded-xl border border-gray-200">
+                                            <div className="flex flex-col sm:flex-row gap-4">
+                                                <div className="relative overflow-hidden rounded-xl border border-gray-200 w-full sm:w-auto shrink-0">
                                                     <canvas
                                                         ref={canvasRef}
                                                         width="200"
                                                         height="56"
-                                                        className="bg-gray-50"
+                                                        className="bg-gray-50 w-full sm:w-auto"
                                                     />
                                                     <button
                                                         onClick={(e) => { e.preventDefault(); drawCaptcha(); }}
-                                                        className="absolute right-0 top-0 h-full px-3 text-gray-500 hover:text-[#FF014F] transition-colors bg-white/50 backdrop-blur-sm"
+                                                        className="absolute right-0 top-0 h-full px-3 text-gray-500 hover:text-[#FF5722] transition-colors bg-white/50 backdrop-blur-sm"
                                                         title="Refresh Captcha"
                                                     >
                                                         <RefreshCw size={16} />
@@ -286,7 +286,7 @@ export default function Contact() {
                                                     name="captchaAnswer"
                                                     value={formData.captchaAnswer}
                                                     onChange={handleChange}
-                                                    className={`flex-1 px-6 py-4 rounded-xl bg-gray-50 border ${errors.captchaAnswer ? 'border-red-500' : 'border-gray-100'} focus:border-[#FF014F] focus:ring-1 focus:ring-[#FF014F] outline-none transition-all placeholder:text-gray-400 font-medium`}
+                                                    className={`flex-1 px-6 py-4 rounded-xl bg-gray-50 border ${errors.captchaAnswer ? 'border-red-500' : 'border-gray-100'} focus:border-[#FF5722] focus:ring-1 focus:ring-[#FF5722] outline-none transition-all placeholder:text-gray-400 font-medium`}
                                                     placeholder="Enter code"
                                                 />
                                             </div>
@@ -321,7 +321,7 @@ export default function Contact() {
                                                 name="website"
                                                 value={formData.website}
                                                 onChange={handleChange}
-                                                className={`w-full px-6 py-4 rounded-xl bg-gray-50 border ${errors.website ? 'border-red-500' : 'border-gray-100'} focus:border-[#FF014F] focus:ring-1 focus:ring-[#FF014F] outline-none transition-all placeholder:text-gray-400 font-medium`}
+                                                className={`w-full px-6 py-4 rounded-xl bg-gray-50 border ${errors.website ? 'border-red-500' : 'border-gray-100'} focus:border-[#FF5722] focus:ring-1 focus:ring-[#FF5722] outline-none transition-all placeholder:text-gray-400 font-medium`}
                                                 placeholder="https://yourwebsite.com"
                                             />
                                             {errors.website && <p className="text-red-500 text-xs mt-1 pl-2">{errors.website}</p>}
@@ -332,7 +332,7 @@ export default function Contact() {
                                                 name="teamSize"
                                                 value={formData.teamSize}
                                                 onChange={handleChange}
-                                                className={`w-full px-6 py-4 rounded-xl bg-gray-50 border ${errors.teamSize ? 'border-red-500' : 'border-gray-100'} focus:border-[#FF014F] focus:ring-1 focus:ring-[#FF014F] outline-none transition-all text-[#1d1d1d] font-medium appearance-none`}
+                                                className={`w-full px-6 py-4 rounded-xl bg-gray-50 border ${errors.teamSize ? 'border-red-500' : 'border-gray-100'} focus:border-[#FF5722] focus:ring-1 focus:ring-[#FF5722] outline-none transition-all text-[#1d1d1d] font-medium appearance-none`}
                                             >
                                                 <option value="" disabled>Select size</option>
                                                 <option value="1-2">1-2 People</option>
@@ -345,7 +345,7 @@ export default function Contact() {
 
                                         <button
                                             onClick={handleFinalSubmit}
-                                            className="w-full mt-2 px-10 py-4 bg-[#FF014F] text-white font-bold rounded-xl shadow-lg hover:shadow-[0_10px_20px_rgba(255,1,79,0.4)] transition-all duration-300 flex items-center justify-center gap-2"
+                                            className="w-full mt-2 px-10 py-4 bg-[#FF5722] text-white font-bold rounded-xl shadow-lg hover:shadow-[0_10px_20px_rgba(255,1,79,0.4)] transition-all duration-300 flex items-center justify-center gap-2"
                                         >
                                             Book My Clarity Call
                                             <ArrowRight className="w-5 h-5" />

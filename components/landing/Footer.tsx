@@ -33,7 +33,7 @@ export default function Footer() {
                                 <a
                                     key={index}
                                     href={social.href}
-                                    className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-[#FF014F] hover:border-[#FF014F] transition-all duration-300 group"
+                                    className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-[#FF5722] hover:border-[#FF5722] transition-all duration-300 group"
                                 >
                                     <social.icon size={18} className="group-hover:scale-110 transition-transform" />
                                 </a>
@@ -49,9 +49,9 @@ export default function Footer() {
                                 <li key={item}>
                                     <a
                                         href={item === 'Home' ? '#' : `#${item.toLowerCase()}`}
-                                        className="text-gray-400 hover:text-[#FF014F] transition-colors flex items-center gap-2 group text-base"
+                                        className="text-gray-400 hover:text-[#FF5722] transition-colors flex items-center gap-2 group text-base"
                                     >
-                                        <ArrowRight size={14} className="opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300 text-[#FF014F]" />
+                                        <ArrowRight size={14} className="opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300 text-[#FF5722]" />
                                         {item}
                                     </a>
                                 </li>
@@ -64,18 +64,18 @@ export default function Footer() {
                         <h3 className="text-white font-bold text-xl mb-6 font-rajdhani">Contact</h3>
                         <ul className="space-y-6">
                             <li className="flex items-start gap-4">
-                                <div className="w-10 h-10 rounded-full bg-[#FF014F]/10 flex items-center justify-center text-[#FF014F] shrink-0">
+                                <div className="w-10 h-10 rounded-full bg-[#FF5722]/10 flex items-center justify-center text-[#FF5722] shrink-0">
                                     <Mail size={18} />
                                 </div>
                                 <div>
                                     <p className="text-sm text-gray-500 mb-1 uppercase tracking-wider">Email us at</p>
-                                    <a href="mailto:connect@digioutreach.com" className="text-white font-medium hover:text-[#FF014F] transition-colors text-lg">
+                                    <a href="mailto:connect@digioutreach.com" className="text-white font-medium hover:text-[#FF5722] transition-colors text-lg">
                                         connect@digioutreach.com
                                     </a>
                                 </div>
                             </li>
                             <li className="flex items-start gap-4">
-                                <div className="w-10 h-10 rounded-full bg-[#FF014F]/10 flex items-center justify-center text-[#FF014F] shrink-0">
+                                <div className="w-10 h-10 rounded-full bg-[#FF5722]/10 flex items-center justify-center text-[#FF5722] shrink-0">
                                     <MapPin size={18} />
                                 </div>
                                 <div>

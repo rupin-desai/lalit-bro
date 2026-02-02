@@ -39,7 +39,7 @@ export default function Hero() {
                             {/* Actually, the original had <br />. Flex wrap might reflow differently. */}
                             {/* To keep the color and potentially the line break, let's wrap the second part in a span or div */}
 
-                            <motion.span className="text-[#FF014F] inline-flex flex-wrap gap-x-2">
+                            <motion.span className="text-[#FF5722] inline-flex flex-wrap gap-x-2">
                                 {part2Words.map((word) => (
                                     <motion.span key={`p2-${word.id}`} variants={wordItem}>{word.text}</motion.span>
                                 ))}
@@ -60,15 +60,15 @@ export default function Hero() {
                                  If I put staggerContainer on the parent div, these will just be fadeUps.
                              */}
                             <motion.div className="flex items-start gap-3" variants={fadeUp}>
-                                <AlertTriangle className="text-[#FF014F] mt-1 shrink-0" size={18} />
+                                <AlertTriangle className="text-[#FF5722] mt-1 shrink-0" size={18} />
                                 <p className="text-[#1d1d1d] text-base">Your team is busy, but growth isn’t proportional</p>
                             </motion.div>
                             <motion.div className="flex items-start gap-3" variants={fadeUp}>
-                                <AlertTriangle className="text-[#FF014F] mt-1 shrink-0" size={18} />
+                                <AlertTriangle className="text-[#FF5722] mt-1 shrink-0" size={18} />
                                 <p className="text-[#1d1d1d] text-base">You feel results should be better than this</p>
                             </motion.div>
                             <motion.div className="flex items-start gap-3" variants={fadeUp}>
-                                <AlertTriangle className="text-[#FF014F] mt-1 shrink-0" size={18} />
+                                <AlertTriangle className="text-[#FF5722] mt-1 shrink-0" size={18} />
                                 <p className="text-[#1d1d1d] text-base">Decisions are happening without a clear marketing logic</p>
                             </motion.div>
                         </motion.div>
@@ -89,14 +89,14 @@ export default function Hero() {
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4">
-                                <a href="#contact" className="invoke-btn group relative inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white transition-all duration-300 bg-[#FF014F] rounded-full hover:shadow-[0_10px_20px_rgba(255,1,79,0.3)] hover:-translate-y-1 overflow-hidden">
+                                <a href="#contact" className="invoke-btn group relative inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white transition-all duration-300 bg-[#FF5722] rounded-full hover:shadow-[0_10px_20px_rgba(255,1,79,0.3)] hover:-translate-y-1 overflow-hidden">
                                     <span className="relative z-10">Get Digital Marketing Clarity Audit</span>
                                     <ArrowRight className="w-5 h-5 ml-2 relative z-10 transform group-hover:translate-x-1 transition-transform" />
                                     <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                                 </a>
                             </div>
                             <p className="text-base text-[#4b5563] font-medium flex items-center gap-2">
-                                <span className="w-2 h-2 rounded-full bg-[#FF014F]"></span>
+                                <span className="w-2 h-2 rounded-full bg-[#FF5722]"></span>
                                 Founder-level conversation · No tools · No dashboards
                             </p>
                         </motion.div>

@@ -48,7 +48,7 @@ export default function FAQ() {
                     variants={staggerContainer}
                     className="text-center mb-16"
                 >
-                    <motion.span variants={fadeUp} className="text-[#FF014F] font-bold text-sm uppercase tracking-widest block">FAQ</motion.span>
+                    <motion.span variants={fadeUp} className="text-[#FF5722] font-bold text-sm uppercase tracking-widest block">FAQ</motion.span>
                     <motion.h2 variants={fadeUp} className="text-4xl font-bold text-[#1d1d1d] mt-3 font-rajdhani">
                         Common Questions
                     </motion.h2>
@@ -71,10 +71,10 @@ export default function FAQ() {
                                 className="w-full px-8 py-6 text-left flex justify-between items-center focus:outline-none"
                                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                             >
-                                <span className={`font-bold text-lg md:text-xl font-rajdhani ${openIndex === index ? 'text-[#FF014F]' : 'text-[#1d1d1d]'}`}>
+                                <span className={`font-bold text-lg md:text-xl font-rajdhani ${openIndex === index ? 'text-[#FF5722]' : 'text-[#1d1d1d]'}`}>
                                     {faq.question}
                                 </span>
-                                <span className={`transform transition-transform duration-300 text-[#FF014F] ml-4 ${openIndex === index ? 'rotate-180' : ''}`}>
+                                <span className={`transform transition-transform duration-300 text-[#FF5722] ml-4 ${openIndex === index ? 'rotate-180' : ''}`}>
                                     <ChevronDown size={24} />
                                 </span>
                             </button>

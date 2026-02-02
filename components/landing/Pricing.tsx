@@ -15,7 +15,7 @@ export default function Pricing() {
                     variants={staggerContainer}
                     className="text-center mb-16"
                 >
-                    <motion.span variants={fadeUp} className="text-[#FF014F] font-bold text-sm uppercase tracking-widest block">Honorarium</motion.span>
+                    <motion.span variants={fadeUp} className="text-[#FF5722] font-bold text-sm uppercase tracking-widest block">Honorarium</motion.span>
                     <motion.h2 variants={fadeUp} className="text-4xl md:text-5xl font-bold text-[#1d1d1d] mt-3 mb-4 font-rajdhani">
                         Pricing & Investment
                     </motion.h2>
@@ -69,11 +69,11 @@ export default function Pricing() {
                     </div>
 
                     {/* Price Card: Spanning across both columns */}
-                    <div className="bg-white p-8 md:p-12 rounded-3xl border-l-8 border-[#FF014F] shadow-sm relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
+                    <div className="bg-white p-8 md:p-12 rounded-3xl border-l-8 border-[#FF5722] shadow-sm relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
                         <div className="w-full md:w-1/2">
                             <p className="text-2xl md:text-3xl font-bold text-[#1d1d1d] font-rajdhani mb-2">Anchor Price</p>
                             <p className="text-lg md:text-xl text-[#4b5563] font-medium mb-6">Typical honorarium range</p>
-                            <p className="text-4xl md:text-5xl font-bold text-[#FF014F] font-rajdhani">₹20k – ₹80k+</p>
+                            <p className="text-4xl md:text-5xl font-bold text-[#FF5722] font-rajdhani">₹20k – ₹80k+</p>
                         </div>
 
                         <div className="w-full md:w-1/2">
@@ -85,7 +85,7 @@ export default function Pricing() {
                         </div>
                     </div>
                     {/* Background Decoration */}
-                    <div className="absolute top-0 right-0 w-96 h-96 bg-[#FF014F] opacity-[0.03] rounded-full transform translate-x-1/3 -translate-y-1/3 blur-3xl pointer-events-none"></div>
+                    <div className="absolute top-0 right-0 w-96 h-96 bg-[#FF5722] opacity-[0.03] rounded-full transform translate-x-1/3 -translate-y-1/3 blur-3xl pointer-events-none"></div>
                 </motion.div>
             </div>
         </section>
