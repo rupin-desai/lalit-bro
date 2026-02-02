@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { Twitter, Linkedin, Github, Instagram, Mail, MapPin, ArrowRight, Facebook } from 'lucide-react';
+import { Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { staggerContainer, fadeUp } from '../AnimationUtils';
 
@@ -17,28 +17,14 @@ export default function Footer() {
                 >
                     {/* Brand Section */}
                     <motion.div className="space-y-6" variants={fadeUp}>
-                        <a href="#" className="flex items-center gap-2">
-                            <img src="/logos/logo_full.png" alt="Digioutreach" className="h-16 bg-white rounded-lg p-1" />
+                        <a href="#" className="bg-white px-5 py-3 rounded-lg shadow-sm inline-flex items-center gap-1.5 italic">
+                            <span className="text-2xl md:text-3xl font-black font-rajdhani text-[#1d1d1d] tracking-tighter">CA KAPIL</span>
+                            <span className="text-2xl md:text-3xl font-black font-rajdhani text-[#FF5722] tracking-tighter">CHANDAK</span>
                         </a>
                         <p className="text-gray-400 text-base leading-relaxed max-w-xs">
                             Helping businesses scale with clarity and direction. We build sustainable growth engines for modern brands.
                         </p>
-                        <div className="flex gap-4">
-                            {[
-                                { icon: Linkedin, href: "#" },
-                                { icon: Twitter, href: "#" },
-                                { icon: Instagram, href: "#" },
-                                { icon: Facebook, href: "#" }
-                            ].map((social, index) => (
-                                <a
-                                    key={index}
-                                    href={social.href}
-                                    className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-[#FF5722] hover:border-[#FF5722] transition-all duration-300 group"
-                                >
-                                    <social.icon size={18} className="group-hover:scale-110 transition-transform" />
-                                </a>
-                            ))}
-                        </div>
+
                     </motion.div>
 
                     {/* Quick Links */}
@@ -76,13 +62,13 @@ export default function Footer() {
                             </li>
                             <li className="flex items-start gap-4">
                                 <div className="w-10 h-10 rounded-full bg-[#FF5722]/10 flex items-center justify-center text-[#FF5722] shrink-0">
-                                    <MapPin size={18} />
+                                    <Phone size={18} />
                                 </div>
                                 <div>
-                                    <p className="text-sm text-gray-500 mb-1 uppercase tracking-wider">Located at</p>
-                                    <p className="text-white font-medium text-lg">
-                                        Mumbai, India
-                                    </p>
+                                    <p className="text-sm text-gray-500 mb-1 uppercase tracking-wider">Call us at</p>
+                                    <a href="tel:+919429690981" className="text-white font-medium hover:text-[#FF5722] transition-colors text-lg">
+                                        +91 94296 90981
+                                    </a>
                                 </div>
                             </li>
                         </ul>
@@ -91,7 +77,7 @@ export default function Footer() {
 
                 <div className="border-t border-gray-800 pt-8 flex justify-center items-center">
                     <p className="text-gray-500 text-base">
-                        © {new Date().getFullYear()} Digioutreach. All rights reserved.
+                        © {new Date().getFullYear()} CA Kapil Chandak. All rights reserved.
                     </p>
                 </div>
             </div>

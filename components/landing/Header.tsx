@@ -19,9 +19,9 @@ export default function Header() {
             <div className="container mx-auto px-4 flex justify-between items-center">
                 {/* Logo */}
                 <div className="flex items-center">
-                    <a href="#" className="flex items-center gap-2">
-                        {/* Assuming we stick with a text logo or the existing image */}
-                        <img src="/logos/logo_full.png" alt="Digioutreach" className="h-12 md:h-16" />
+                    <a href="#" className="bg-white px-5 py-3 rounded-lg shadow-sm border border-gray-100 inline-flex items-center gap-1.5 italic">
+                        <span className="text-2xl md:text-3xl font-black font-rajdhani text-[#1d1d1d] tracking-tighter">CA KAPIL</span>
+                        <span className="text-2xl md:text-3xl font-black font-rajdhani text-[#FF5722] tracking-tighter">CHANDAK</span>
                     </a>
                 </div>
 
@@ -37,14 +37,6 @@ export default function Header() {
                         </a>
                     ))}
                 </nav>
-
-                {/* CTA Button */}
-                <div className="hidden md:block">
-                    <a href="#contact" className="px-6 py-2.5 rounded-full border-2 border-[#1d1d1d] text-[#1d1d1d] font-bold hover:bg-[#FF5722] hover:border-[#FF5722] hover:text-white transition-all duration-300">
-                        Book Clarity Call
-                    </a>
-                </div>
-
                 {/* Mobile Menu Toggle */}
                 <button
                     className="md:hidden text-[#1d1d1d]"
@@ -67,9 +59,6 @@ export default function Header() {
                             {item}
                         </a>
                     ))}
-                    <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="mt-2 text-center px-6 py-3 rounded-full bg-[#FF5722] text-white font-bold">
-                        Book Clarity Call
-                    </a>
                 </div>
             )}
         </header>

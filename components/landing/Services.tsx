@@ -1,6 +1,5 @@
 'use client';
 import React from 'react';
-import { OctagonX, TrendingUp, ScanEye } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { fadeUp, staggerContainer } from '../AnimationUtils';
 
@@ -8,17 +7,17 @@ const outcomes = [
     {
         title: 'What to STOP immediately',
         description: 'Activities draining time and money without strategic value.',
-        Icon: OctagonX
+        image: '/services/1.png'
     },
     {
         title: 'What to MULTIPLY',
         description: 'High-impact actions that drive measurable growth.',
-        Icon: TrendingUp
+        image: '/services/2.png'
     },
     {
         title: 'Your Key Blind Spot',
         description: 'The one insight silently limiting scale that wasn’t visible before.',
-        Icon: ScanEye
+        image: '/services/3.png'
     }
 ];
 
@@ -55,8 +54,12 @@ export default function Services() {
                             className="group p-6 md:p-10 rounded-[2.5rem] bg-white border border-gray-100/50 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 h-full flex flex-col items-center text-center hover:border-[#FF5722]/20"
                             variants={fadeUp}
                         >
-                            <div className="mb-6 text-[#FF5722] transition-transform duration-300 group-hover:scale-110">
-                                <item.Icon size={48} strokeWidth={1.5} />
+                            <div className="mb-6 transition-transform duration-300 group-hover:scale-110">
+                                <img
+                                    src={item.image}
+                                    alt={item.title}
+                                    className="w-20 h-20 object-contain"
+                                />
                             </div>
                             <h3 className="text-2xl font-bold text-[#1d1d1d] mb-4 font-rajdhani">
                                 {item.title}

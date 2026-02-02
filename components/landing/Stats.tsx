@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { staggerContainer, fadeUp, wordContainer, wordItem, cleanText, fadeIn } from '../AnimationUtils';
 
 export default function Stats() {
-    const titleWords = cleanText("Led by Digioutreach");
+    const titleWords = cleanText("Led by CA Kapil Chandak");
 
     return (
         <section className="py-0 bg-transparent">

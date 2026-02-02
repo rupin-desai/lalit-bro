@@ -76,7 +76,7 @@ export default function Process() {
 
                         <div className="mb-8">
                             <p className="text-base font-bold text-[#1d1d1d] mb-3 uppercase tracking-wider">We Cover:</p>
-                            <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2 text-base text-[#4b5563]">
+                            <ul className="space-y-4 text-base text-[#4b5563]">
                                 <li className="flex items-start gap-2">
                                     <span className="w-1.5 h-1.5 bg-[#FF5722] rounded-full mt-2 shrink-0"></span>
                                     Business goals vs marketing goals
