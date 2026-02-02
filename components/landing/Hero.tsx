@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { fadeUp, staggerContainer, wordContainer, wordItem, cleanText, fadeIn } from '../AnimationUtils';
 
 export default function Hero() {
-    const titleWords = cleanText("Your digital marketing doesn’t need more effort and money. It needs clarity on what to stop.");
+    const titleWords = cleanText("Your digital marketing Team doesn’t need more effort and money. It needs clarity on what to stop.");
     // Splitting the title into two parts for better control if needed, but the cleanText returns a flat array.
     // The user's original code had a <br /> and a span for color. 
     // I can stick to the visual structure but animate words.
@@ -13,7 +13,7 @@ export default function Hero() {
     // Be careful with the "It needs clarity on what to stop." part which is colored.
 
     // Let's split it:
-    const part1Words = cleanText("Your digital marketing doesn’t need more effort and money.");
+    const part1Words = cleanText("Your digital marketing team doesn’t need more effort and money.");
     const part2Words = cleanText("It needs clarity on what to stop.");
 
     return (
@@ -46,24 +46,7 @@ export default function Hero() {
                             </motion.span>
                         </motion.h1>
 
-                        {/* Mobile Hero Image (Title -> Image -> Rest) */}
-                        <div className="w-full relative flex lg:hidden items-center justify-center mb-8">
-                            <motion.div
-                                className="relative z-10 rounded-2xl overflow-hidden border-4 border-white/50 w-full max-w-[320px]"
-                                initial="hidden"
-                                whileInView="visible"
-                                viewport={{ once: true }}
-                                variants={fadeIn}
-                            >
-                                <img
-                                    src="/1.png"
-                                    alt="Strategic Clarity"
-                                    className="w-full h-auto object-cover"
-                                />
-                            </motion.div>
-                            {/* Background decoration */}
-                            <div className="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-1/4 w-[120%] h-[120%] bg-linear-to-br from-gray-100 to-white rounded-full opacity-50 -z-10 blur-3xl"></div>
-                        </div>
+
 
                         <motion.p
                             className="text-lg text-[#1d1d1d] leading-relaxed mb-8 max-w-xl"
@@ -90,44 +73,33 @@ export default function Hero() {
                             </motion.div>
                         </motion.div>
 
-                        <motion.p
-                            className="text-2xl text-[#1d1d1d] leading-relaxed mb-4 max-w-xl font-bold italic font-rajdhani"
-                            variants={fadeUp}
-                        >
-                            Don’t replace your team or agency. Fix the decisions holding them back.
-                        </motion.p>
+                    </motion.div>
 
-                        <motion.div className="flex flex-col gap-5" variants={fadeUp}>
+                    {/* Right Side: CTA Action */}
+                    <div className="w-full lg:w-2/5 relative flex flex-col justify-center items-start lg:pl-12 mt-8 lg:mt-0">
+                        <motion.div
+                            className="flex flex-col gap-6"
+                            variants={fadeUp}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                        >
+                            <p className="text-2xl text-[#1d1d1d] leading-relaxed font-bold italic font-rajdhani">
+                                Don’t replace your team or agency. Fix the decisions holding them back.
+                            </p>
+
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <a href="https://calendly.com/kapilchandak-digioutreach/digital-marketing-strategy-advisor" className="invoke-btn group relative inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white transition-all duration-300 bg-[#FF014F] rounded-full hover:shadow-[0_10px_20px_rgba(255,1,79,0.3)] hover:-translate-y-1 overflow-hidden">
-                                    <span className="relative z-10">Get Strategic Marketing Clarity</span>
+                                    <span className="relative z-10">Get Digital Marketing Clarity Audit</span>
                                     <ArrowRight className="w-5 h-5 ml-2 relative z-10 transform group-hover:translate-x-1 transition-transform" />
                                     <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                                 </a>
                             </div>
-                            <p className="text-base text-[#1d1d1d] font-semibold flex items-center">
-                                (Founder-level conversation · No tools · No dashboards)
+                            <p className="text-base text-[#4b5563] font-medium flex items-center gap-2">
+                                <span className="w-2 h-2 rounded-full bg-[#FF014F]"></span>
+                                Founder-level conversation · No tools · No dashboards
                             </p>
                         </motion.div>
-                    </motion.div>
-
-                    {/* Hero Image / Illustration */}
-                    <div className="hidden lg:flex w-full lg:w-2/5 relative items-center justify-center mt-0">
-                        <motion.div
-                            className="relative z-10 rounded-2xl overflow-hidden border-4 border-white/50 w-full max-w-[320px] lg:max-w-[650px]"
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: true }}
-                            variants={fadeIn}
-                        >
-                            <img
-                                src="/1.png"
-                                alt="Strategic Clarity"
-                                className="w-full h-auto object-cover"
-                            />
-                        </motion.div>
-                        {/* Background decoration */}
-                        <div className="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-1/4 w-[120%] h-[120%] bg-linear-to-br from-gray-100 to-white rounded-full opacity-50 -z-10 blur-3xl"></div>
                     </div>
                 </div>
             </div>

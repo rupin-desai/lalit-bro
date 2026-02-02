@@ -39,7 +39,7 @@ export default function Stats() {
                             variants={fadeUp}
                             className="text-[#FF014F] font-bold uppercase tracking-widest text-sm mb-3 block"
                         >
-                            Trust & Authority
+                            Digital Marketing Clarity Audit
                         </motion.span>
 
                         <motion.h2
@@ -63,7 +63,7 @@ export default function Stats() {
                             variants={fadeUp}
                             className="text-xl font-medium text-[#1d1d1d] mb-6 flex items-center gap-2"
                         >
-                            Founder, Digioutreach LLP
+                            Founder, Digioutreach LLP | Digital Marketing Strategy Expert
                         </motion.h3>
 
 

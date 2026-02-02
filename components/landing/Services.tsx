@@ -38,7 +38,7 @@ export default function Services() {
                     variants={staggerContainer}
                     className="text-center mb-16 lg:mb-20"
                 >
-                    <motion.span variants={fadeUp} className="text-[#FF014F] font-bold text-sm uppercase tracking-widest block">Outcomes First</motion.span>
+
                     <motion.h2 variants={fadeUp} className="text-4xl md:text-5xl font-bold text-[#1d1d1d] mt-3 mb-6 font-rajdhani">
                         What You Walk Away With
                     </motion.h2>
