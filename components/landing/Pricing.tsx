@@ -36,12 +36,12 @@ export default function Pricing() {
                             </p>
 
                             <p className="text-lg text-[#1d1d1d] font-bold mb-0 leading-relaxed">
-                                Honorarium is decided after Phase 2, based on the value this clarity creates for your business.
+                                Honorarium is decided after the Phase 2 Meeting, based on the value you feel this Audit created for your business.
                             </p>
                         </div>
 
                         <div className="w-full md:w-1/2 relative z-10">
-                            <h3 className="text-2xl font-bold text-[#1d1d1d] mb-6 font-rajdhani">The Promise</h3>
+                            <h3 className="text-2xl font-bold text-[#1d1d1d] mb-6 font-rajdhani">This pricing model keeps the engagement:</h3>
                             <ul className="space-y-6">
                                 <li className="flex items-start">
                                     <CheckCircle className="text-green-500 mr-4 mt-1 shrink-0" size={24} />

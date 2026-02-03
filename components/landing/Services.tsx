@@ -33,12 +33,9 @@ export default function Services() {
                     className="text-center mb-16 lg:mb-20"
                 >
 
-                    <motion.h2 variants={fadeUp} className="text-4xl md:text-5xl font-bold text-[#1d1d1d] mt-3 mb-6 font-rajdhani">
-                        What You Walk Away With
-                    </motion.h2>
-                    <motion.p variants={fadeUp} className="text-[#1d1d1d] text-xl font-medium max-w-2xl mx-auto">
+                    <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1d1d1d] mt-3 mb-6 font-rajdhani leading-tight">
                         By the end of this engagement, you will clearly know:
-                    </motion.p>
+                    </motion.h2>
                 </motion.div>
 
                 <motion.div

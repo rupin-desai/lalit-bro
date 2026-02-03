@@ -75,9 +75,9 @@ export default function Stats() {
                             variants={staggerContainer}
                         >
                             {[
-                                { end: 8, suffix: '+', label: 'Years in Digital Strategy' },
+                                { end: 8, suffix: '+', label: 'Years in Digital Marketing Strategy' },
                                 { end: 400, suffix: '+', label: 'Projects across industries' },
-                                { end: 310, suffix: '+', label: '"What to Stop" Audits' },
+                                { end: 310, suffix: '+', label: 'Digital Marketing Clarity Audits' },
                                 { end: 37000, suffix: '+', label: 'YouTube Subscribers' }
                             ].map((stat, index) => (
                                 <motion.div key={index} className="bg-white p-6 rounded-xl" variants={fadeUp}>

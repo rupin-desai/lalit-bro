@@ -3,20 +3,20 @@ import "./globals.css";
 import GridBackground from "@/components/GridBackground";
 
 export const metadata: Metadata = {
-  title: "CA Kapil Chandak | Strategic Digital Marketing Advisor",
-  description: "Stop wasting budget on digital marketing. CA Kapil Chandak provides strategic clarity to founders on what to stop and what to multiply. No tools, just decisions.",
+  title: "Digital Marketing Clarity Audit for Founders | CA Kapil Chandak",
+  description: "Have a digital marketing team or agency but results aren’t matching expectations? A 45–60 min clarity audit to identify what to stop, what to multiply, and what’s blocking ROI.",
   keywords: ["Digital Marketing Strategy", "Marketing Audit", "Founder Clarity", "CA Kapil Chandak", "Business Growth"],
   openGraph: {
-    title: "CA Kapil Chandak | Strategic Digital Marketing Advisor",
-    description: "Your digital marketing doesn’t need more effort and money. It needs clarity on what to stop.",
+    title: "Digital Marketing Clarity Audit for Founders | CA Kapil Chandak",
+    description: "Have a digital marketing team or agency but results aren’t matching expectations? A 45–60 min clarity audit to identify what to stop, what to multiply, and what’s blocking ROI.",
     type: "website",
     locale: "en_US",
     siteName: "CA Kapil Chandak",
   },
   twitter: {
     card: "summary_large_image",
-    title: "CA Kapil Chandak | Strategic Digital Marketing Advisor",
-    description: "Your digital marketing doesn’t need more effort and money. It needs clarity on what to stop.",
+    title: "Digital Marketing Clarity Audit for Founders | CA Kapil Chandak",
+    description: "Have a digital marketing team or agency but results aren’t matching expectations? A 45–60 min clarity audit to identify what to stop, what to multiply, and what’s blocking ROI.",
   }
 };
 

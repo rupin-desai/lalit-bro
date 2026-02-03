@@ -14,10 +14,10 @@ export default function Hero() {
 
     // Let's split it:
     const part1Words = cleanText("Your digital marketing team doesn’t need more effort and money.");
-    const part2Words = cleanText("It needs clarity on what to stop.");
+    const part2Words = cleanText("It needs clarity on what to stop");
 
     return (
-        <section className="relative min-h-dvh lg:min-h-screen flex items-center pt-24 pb-12 lg:pt-0 lg:pb-0 bg-transparent overflow-hidden">
+        <section className="relative min-h-dvh lg:min-h-[750px] flex items-center pt-32 pb-12 lg:pt-0 lg:pb-0 bg-transparent overflow-hidden">
             <div className="container mx-auto px-6 md:px-12 lg:px-24 relative z-10 h-full flex flex-col justify-center">
                 <div className="flex flex-col lg:flex-row items-center gap-12 lg:h-full lg:min-h-[600px]">
                     {/* Text Content */}
@@ -55,7 +55,7 @@ export default function Hero() {
                             If you already have a digital marketing team or agency — but results feel slower, costlier, or unclear — this is for you.
                         </motion.p>
 
-                        <motion.div className="space-y-3 mb-8" variants={staggerContainer}>
+                        <motion.div className="space-y-3 mb-1 md:mb-8" variants={staggerContainer}>
                             {/* Nested stagger might need care, but staggerContainer handles children. 
                                  If I put staggerContainer on the parent div, these will just be fadeUps.
                              */}
@@ -71,12 +71,16 @@ export default function Hero() {
                                 <AlertTriangle className="text-[#FF5722] mt-1 shrink-0" size={18} />
                                 <p className="text-[#1d1d1d] text-base">Decisions are happening without a clear marketing logic</p>
                             </motion.div>
+                            <motion.div className="flex items-start gap-3" variants={fadeUp}>
+                                <AlertTriangle className="text-[#FF5722] mt-1 shrink-0" size={18} />
+                                <p className="text-[#1d1d1d] text-base">You’re unsure what’s actually working vs wasting money</p>
+                            </motion.div>
                         </motion.div>
 
                     </motion.div>
 
                     {/* Right Side: CTA Action */}
-                    <div className="w-full lg:w-2/5 relative flex flex-col justify-center items-start lg:pl-12 mt-8 lg:mt-0">
+                    <div className="w-full lg:w-2/5 relative flex flex-col justify-center items-start lg:pl-12 -mt-6 md:mt-0">
                         <motion.div
                             className="flex flex-col gap-6"
                             variants={fadeUp}
@@ -89,12 +93,12 @@ export default function Hero() {
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 mt-2">
-                                <div className="inline-flex items-center justify-center px-8 py-4 text-xl md:text-2xl font-bold text-white bg-[#FF5722] rounded-full shadow-lg font-rajdhani">
+                                <div className="inline-flex flex-col items-center justify-center text-center md:text-left px-8 py-3 text-xl md:text-2xl font-bold text-white bg-[#FF5722] rounded-full shadow-lg font-rajdhani leading-none">
                                     <span className="italic">"Get Digital Marketing Clarity Audit"</span>
+                                    <span className="text-[1.3rem] font-medium mt-1  not-italic">by CA Kapil Chandak</span>
                                 </div>
                             </div>
                             <p className="text-base text-[#4b5563] font-medium flex items-center gap-2">
-                                <span className="w-2 h-2 rounded-full bg-[#FF5722]"></span>
                                 Founder-level conversation · No tools · No dashboards
                             </p>
                         </motion.div>
