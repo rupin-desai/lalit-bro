@@ -2,11 +2,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { fadeUp, staggerContainer } from '../AnimationUtils';
+import { BASE_PATH } from '../constants';
 
 const projects = [
-    { title: 'Digital Transformation Advisors', category: 'Development Coaches', img: '/assets/reeni/portfoli-img-1.jpg' },
-    { title: 'My work is driven by the belief that thoughtful.', category: 'Development App', img: '/assets/reeni/portfoli-img-2.jpg' },
-    { title: 'Mobile App Management', category: 'Application', img: '/assets/reeni/portfoli-img-3.jpg' }
+    { title: 'Digital Transformation Advisors', category: 'Development Coaches', img: `${BASE_PATH}/assets/reeni/portfoli-img-1.jpg` },
+    { title: 'My work is driven by the belief that thoughtful.', category: 'Development App', img: `${BASE_PATH}/assets/reeni/portfoli-img-2.jpg` },
+    { title: 'Mobile App Management', category: 'Application', img: `${BASE_PATH}/assets/reeni/portfoli-img-3.jpg` }
 ];
 
 export default function Portfolio() {

@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { fadeUp, staggerContainer } from '../AnimationUtils';
+import { BASE_PATH } from '../constants';
 
 const skills = [
     { name: 'PHOTOSHOT', percent: 100 },
@@ -25,7 +26,7 @@ export default function Skills() {
                     <motion.div variants={fadeUp}>
                         <h2 className="text-3xl font-bold text-reeni-heading mb-8 flex items-center gap-2">
                             Design Skill
-                            <img src="/assets/reeni/custom-line.png" alt="line" className="inline-block" />
+                            <img src={`${BASE_PATH}/assets/reeni/custom-line.png`} alt="line" className="inline-block" />
                         </h2>
                         <div className="space-y-8">
                             {skills.map((skill, index) => (
@@ -52,7 +53,7 @@ export default function Skills() {
                     <motion.div variants={fadeUp}>
                         <h2 className="text-3xl font-bold text-reeni-heading mb-8 flex items-center gap-2">
                             Development Skill
-                            <img src="/assets/reeni/custom-line.png" alt="line" className="inline-block" />
+                            <img src={`${BASE_PATH}/assets/reeni/custom-line.png`} alt="line" className="inline-block" />
                         </h2>
                         <div className="space-y-8">
                             {skills.map((skill, index) => (

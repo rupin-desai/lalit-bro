@@ -2,22 +2,23 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { fadeUp, staggerContainer } from '../AnimationUtils';
+import { BASE_PATH } from '../constants';
 
 const outcomes = [
     {
         title: 'What to STOP immediately',
         description: 'Activities draining time and money without strategic value.',
-        image: '/services/1.png'
+        image: `${BASE_PATH}/services/1.png`
     },
     {
         title: 'What to MULTIPLY',
         description: 'High-impact actions that drive measurable growth.',
-        image: '/services/2.png'
+        image: `${BASE_PATH}/services/2.png`
     },
     {
         title: 'Your Key Blind Spot',
         description: 'The one insight silently limiting scale that wasn’t visible before.',
-        image: '/services/3.png'
+        image: `${BASE_PATH}/services/3.png`
     }
 ];
 
