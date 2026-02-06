@@ -71,9 +71,10 @@ export default function Pricing() {
                     {/* Price Card: Spanning across both columns */}
                     <div className="bg-white p-8 md:p-12 rounded-3xl border-l-8 border-[#FF5722] shadow-sm relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
                         <div className="w-full md:w-1/2">
-                            <p className="text-2xl md:text-3xl font-bold text-[#1d1d1d] font-rajdhani mb-2">Anchor Price</p>
-                            <p className="text-lg md:text-xl text-[#4b5563] font-medium mb-6">Typical honorarium range</p>
-                            <p className="text-4xl md:text-5xl font-bold text-[#FF5722] font-rajdhani">₹20k – ₹80k+</p>
+                            <p className="text-2xl md:text-3xl font-bold text-[#1d1d1d] font-rajdhani mb-4">Typical Pricing</p>
+                            <p className="text-xl md:text-2xl font-bold text-[#FF5722] font-rajdhani leading-tight">
+                                You decide the value <br /> after the Phase 2 meeting.
+                            </p>
                         </div>
 
                         <div className="w-full md:w-1/2">

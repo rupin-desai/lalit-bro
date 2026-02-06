@@ -93,9 +93,8 @@ export default function Hero() {
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 mt-2">
-                                <div className="inline-flex flex-col items-center justify-center text-center md:text-left px-8 py-3 text-xl md:text-2xl font-bold text-white bg-[#FF5722] rounded-full shadow-lg font-rajdhani leading-none">
+                                <div className="inline-flex flex-col items-center justify-center text-center md:text-left px-8 py-5 text-xl md:text-2xl font-bold text-white bg-[#FF5722] rounded-full shadow-lg font-rajdhani leading-none">
                                     <span className="italic">"Get Digital Marketing Clarity Audit"</span>
-                                    <span className="text-[1.3rem] font-medium mt-1  not-italic">by CA Kapil Chandak</span>
                                 </div>
                             </div>
                             <p className="text-base text-[#4b5563] font-medium flex items-center gap-2">

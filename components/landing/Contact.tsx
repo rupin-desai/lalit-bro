@@ -255,7 +255,7 @@ export default function Contact() {
                                     transition={{ duration: 0.3 }}
                                 >
                                     <p className="text-[#1d1d1d] font-bold text-xl mb-6 text-center">
-                                        Let’s start with your details
+                                        Book a Phase One Online Meeting
                                     </p>
                                     <div className="space-y-4">
                                         {/* Security: Honeypot Field (Hidden) */}
@@ -386,7 +386,7 @@ export default function Contact() {
                                                 </>
                                             ) : (
                                                 <>
-                                                    Book My Clarity Call
+                                                    Book My Meeting
                                                     <ArrowRight className="w-5 h-5" />
                                                 </>
                                             )}

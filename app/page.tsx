@@ -7,7 +7,6 @@ import Process from '@/components/landing/Process';
 import Pricing from '@/components/landing/Pricing';
 import FAQ from '@/components/landing/FAQ';
 import Contact from '@/components/landing/Contact';
-import Footer from '@/components/landing/Footer';
 
 export default function LandingPage() {
   return (
@@ -20,7 +19,6 @@ export default function LandingPage() {
       <Pricing />
       <FAQ />
       <Contact />
-      <Footer />
     </main>
   );
 }
