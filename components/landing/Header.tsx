@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 export default function Header() {
     return (
-        <header className="w-full transition-all duration-300 bg-transparent py-6">
+        <header className="absolute top-0 left-0 w-full z-50 bg-transparent py-4">
             <div className="container mx-auto px-4 flex justify-start items-center">
                 {/* Logo */}
                 <div className="flex items-center">

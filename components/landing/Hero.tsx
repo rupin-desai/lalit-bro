@@ -17,7 +17,7 @@ export default function Hero() {
     const part2Words = cleanText("It needs clarity on what to stop");
 
     return (
-        <section className="relative min-h-dvh lg:min-h-[750px] flex items-center pt-32 pb-12 lg:pt-0 lg:pb-0 bg-transparent overflow-hidden">
+        <section className="relative min-h-[600px] flex items-center pt-24 pb-8 lg:pt-16 lg:pb-0 bg-transparent overflow-hidden">
             <div className="container mx-auto px-6 md:px-12 lg:px-24 relative z-10 h-full flex flex-col justify-center">
                 <div className="flex flex-col lg:flex-row items-center gap-12 lg:h-full lg:min-h-[600px]">
                     {/* Text Content */}
